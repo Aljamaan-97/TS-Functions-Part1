@@ -9,7 +9,7 @@ function printName(name: string): void {
   console.log(name);
 }
 
-printName("Ahnad Aljamaan");
+printName("Ahmad Aljamaan");
 
 /**
  * Task 2:
@@ -49,3 +49,21 @@ function printHello(name: string, language: string): void {
 
 printHello("Aziz", "es"); // => "Hola Aziz"
 printHello("Aziz", "fr"); // => "Bonjour Aziz"
+
+/**
+ * Task 4:
+ * Create a function named `printMax`
+ * - that takes 2 parameters (x and y)
+ * - Accepts a "x" parameter of type "number"
+ * - Accepts a "y" parameter of type "number"
+ * - should print out the bigger number
+ */
+function printMax(x: number, y: number): void {
+  if (x > y) {
+    console.log(x);
+  } else {
+    console.log(y);
+  }
+}
+// example:
+printMax(4, 7); // => 7
