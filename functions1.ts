@@ -1,0 +1,51 @@
+/**
+ * Task 1:
+ * Create a function named `printName`
+ * - Accepts a "name" parameter of type "string"
+ * - that just prints (logs) that "name" on the screen
+ */
+
+function printName(name: string): void {
+  console.log(name);
+}
+
+printName("Ahnad Aljamaan");
+
+/**
+ * Task 2:
+ * Create a function named `printAge`
+ * - Accepts a "birthYear" parameter of type "number"
+ * - and prints (logs) the age on the screen
+ * - Age = current year - birth
+ */
+function printAge(birthYear: number): void {
+  console.log(2025 - birthYear);
+}
+
+printAge(1997);
+/**
+ * Task 3:
+ * Create a function named `printHello`
+ * - that takes 2 parameters (name and language)
+ * - Accepts a "name" parameter of type "string"
+ * - Accepts a "language" parameter of type "LanguageType"
+ * - language can be passed in different values, here are the accepted values:-
+ * -- en: it should print `Hello NAME`
+ * -- es: it should print `Hola NAME`
+ * -- fr: it should print `Bonjour NAME`
+ * -- tr: it should print `Merhaba NAME`
+ */
+function printHello(name: string, language: string): void {
+  if (language === "en") {
+    console.log(`Hello ${name}`);
+  } else if (language === "es") {
+    console.log(`Hola ${name}`);
+  } else if (language === "fr") {
+    console.log(`Bonjour ${name}`);
+  } else if (language === "tr") {
+    console.log(`Merhaba ${name}`);
+  }
+}
+
+printHello("Aziz", "es"); // => "Hola Aziz"
+printHello("Aziz", "fr"); // => "Bonjour Aziz"
